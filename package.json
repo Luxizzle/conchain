@@ -11,9 +11,12 @@
     "url": "git+https://github.com/Luxizzle/conchain.git"
   },
   "author": "Lux Pandora",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Luxizzle/conchain/issues"
   },
-  "homepage": "https://github.com/Luxizzle/conchain#readme"
+  "homepage": "https://github.com/Luxizzle/conchain#readme",
+  "dependencies": {
+    "app-root-path": "^1.0.0"
+  }
 }
