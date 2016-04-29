@@ -7,18 +7,24 @@ var root = require('app-root-path'),
 module.exports = function(options, app, dirs) {
     options = options || {}
 
+
     var _options = {
         base: '',
         sep: '/',
         log: {
-            base: true,
+            base: false,
             dir: false,
             file: false
         }
     }
 
     for (var o in options) {
-        _options[o] = options[o];
+        if (o !== 'log') { _options[o] = options[o]; }
+    }
+    if (options.log) {
+        for (var o in options.log) {
+            _options.log[o] = options.log[o];
+        }
     }
 
     var context = {_app: app}
