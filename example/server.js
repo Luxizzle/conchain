@@ -2,7 +2,15 @@ var express = require('express'),
     conchain = require('conchain')
     app = express();
 
-conchain({base: 'api'}, app, [
+conchain({
+    base: 'api',
+    sep: '/',
+    log: {
+        base: true,
+        dir: true,
+        file: true
+    }
+}, app, [
     'models',
     'middleware',
     'routers'
