@@ -3,7 +3,7 @@ module.exports = function(mod, context, app) {
     var user = context.models.user
 
     mod.index = function(req, res, next) {
-        return res.redirext('/users')
+        return res.redirect('/users')
     }
 
     mod.all = function(req, res, next) {
@@ -12,7 +12,7 @@ module.exports = function(mod, context, app) {
     }
 
     mod.findName = function(req, res, next) {
-        var user = user.findByName(req.params.name)
-        return res.json(user)
+        var userf = user.findByName(req.params.name)
+        return res.json(userf)
     }
 }
