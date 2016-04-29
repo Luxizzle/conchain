@@ -1,6 +1,6 @@
 {
   "name": "conchain",
-  "version": "0.6.7",
+  "version": "0.6.8",
   "description": "Chaining dirs together for a nice workflow",
   "main": "index.js",
   "scripts": {
