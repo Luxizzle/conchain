@@ -1,3 +1,5 @@
+> This is like one of my first npm modules i made and its old and bad. Please dont judge young Lux.
+
 # conchain
 Chaining dirs together for a nice workflow
 
